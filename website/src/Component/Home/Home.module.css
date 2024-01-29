@@ -1,0 +1,86 @@
+.home_main {
+    background-color: fff;
+    padding: 3%;
+    padding-bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url('https://competitions.moodi.org/static/media/DSC01387.94ce75425896fa4be8a8.jpg');
+    background-position: 50%;
+    background-size: cover;
+}
+
+.header {
+    color: white;
+} 
+
+.header_a {
+    color: #fff;
+    text-align: center;
+}
+
+.header p {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.hero_Section {
+    margin-top: 2%;
+}
+
+.hero {
+    height: 50vh;
+    border-radius: 10px;
+    background-image: url('../../../assets/back_res.jpg'); 
+    background-size: cover;
+    background-position: center;    
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero :first-child {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.button {
+    margin-top: 1%;
+    display: inline-block;
+    padding: 1%;
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 1rem;
+}
+  
+.button:hover {
+    background-color: #FD6502;
+}
+
+
+.about {
+    margin-top: 2%;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.578);
+    padding: 2%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 gray;
+}
+
+.about h2 {
+  font-size: 1.8rem;
+}
+
+.footer {
+    margin-top: 3%;
+    background-color: rgba(14, 12, 38, 0.957);
+    width: 106%;
+    text-align: center;
+    color: #fff;
+    padding: 1%;
+}

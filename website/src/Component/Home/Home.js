@@ -1,8 +1,17 @@
 import React from "react";
 import style from "./Home.module.css";
+import { useNavigate } from 'react-router-dom';
+
 
 
 const Home = () => {
+
+  const navigate = useNavigate();
+
+  const handleShedulePage = ()=> {
+    navigate('/dayone')
+  }
+
   return (
     <div className={style.home_main}>
       <div className={style.header}>
@@ -18,7 +27,7 @@ const Home = () => {
             Join us for an unforgettable journey into the world of art, music,
             and culture.
           </p>
-          <button className={style.button}>
+          <button onClick={handleShedulePage} className={style.button}>
             Shedule Events
           </button>
         </section>

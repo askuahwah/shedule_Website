@@ -9,6 +9,7 @@
     background-image: url('https://competitions.moodi.org/static/media/DSC01387.94ce75425896fa4be8a8.jpg');
     background-position: 50%;
     background-size: cover;
+    cursor: default;
 }
 
 .header {
@@ -56,10 +57,12 @@
     border: none;
     border-radius: 3px;
     font-size: 1rem;
+    cursor: auto;
 }
   
 .button:hover {
     background-color: #FD6502;
+    cursor: pointer;
 }
 
 
@@ -70,6 +73,7 @@
     padding: 2%;
     border-radius: 5px;
     box-shadow: 0 0 10px 0 gray;
+    margin-bottom: 2%;
 }
 
 .about h2 {
@@ -77,9 +81,8 @@
 }
 
 .footer {
-    margin-top: 3%;
     background-color: rgba(14, 12, 38, 0.957);
-    width: 106%;
+    width: 100%;
     text-align: center;
     color: #fff;
     padding: 1%;

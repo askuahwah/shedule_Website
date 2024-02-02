@@ -1,0 +1,86 @@
+.Navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f48fb1;
+    padding: 1%;
+    height: 10vh;
+    width: 100%;
+}
+  
+.Navbar_heading {
+    width: 30%;
+}
+  
+.Navbar_link {
+    width: 30%;
+    display: flex;
+}
+  
+.Navbar_heading p {
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+  
+.Navbar_link a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    margin-right: 10px;
+    background-color: rgb(87, 87, 160);
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.Navbar_link a:hover {
+    background-color: red;
+}
+  
+
+/* DAY ONE  */
+
+.Dayone_table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin-top: 2%;
+    text-align: center;
+}
+  
+
+thead {
+    background-color: #f2d8ea;
+}
+  
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+  
+
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+  
+  /* Hover effect for rows */
+tbody tr:hover {
+    background-color: #e0e0e0;
+}
+
+.table_button {
+    padding: 10%;
+    background-color: #f48fb1;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
+

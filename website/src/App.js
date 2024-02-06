@@ -27,11 +27,9 @@ function AppContent() {
     return location.pathname !== "/";
   };
 
-
-
   return (
     <>
-      {shouldShowNavbar() && <Navbar /> }
+      {shouldShowNavbar() && <Navbar />}
 
       <Routes>
         <Route exact path="/" element={<Home />} />

@@ -2,31 +2,31 @@ import React, { useState } from "react";
 import style from "../Event.module.css";
 
 const AddedEventsTable = ({ addedEvents, handleRemoveButtonClick }) => {
-  // State to manage the loading state while adding to Google Calendar
+
   const [loading, setLoading] = useState(false);
 
-  // Function to send the event to Google Calendar
+ 
   const addToGoogleCalendar = async (event) => {
     try {
-      // Set loading to true while the request is being made
+     
       setLoading(true);
 
-      // Load the Google API script
+   
       await loadGoogleAPI();
 
-      // Authorize and add event to Google Calendar
+      
       await authorizeAndAddEvent(event);
 
-      // Reset loading state
+     
       setLoading(false);
     } catch (error) {
       console.error("Error adding event to Google Calendar:", error);
-      // Handle errors or update UI accordingly
+     
       setLoading(false);
     }
   };
 
-  // Load the Google API script dynamically
+ 
   const loadGoogleAPI = () => {
     return new Promise((resolve, reject) => {
       const script = document.createElement("script");
@@ -40,7 +40,6 @@ const AddedEventsTable = ({ addedEvents, handleRemoveButtonClick }) => {
     });
   };
 
-  // Authorize and add event to Google Calendar
   const authorizeAndAddEvent = async (event) => {
     await window.gapi.client.init({
       apiKey: "AIzaSyAvX1rNvNKyqFMAPBdrlkzqd2AWnExiq0A",
@@ -69,7 +68,6 @@ const AddedEventsTable = ({ addedEvents, handleRemoveButtonClick }) => {
       });
 
       console.log("Event added to Google Calendar:", response.result);
-      // You can handle success or update your UI as needed
     } else {
       throw new Error("Authorization failed");
     }
